@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Jeralyn's Portfolio</title>
+    <link rel="stylesheet" href="portfolioStyle.css">
+    <script src="https://kit.fontawesome.com/0a5771be94.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/programming.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Skills</a></li>
+                        <li><a href="#portfolio">My Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+             </nav> 
+             <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi there! I'm  <br><span> Jeralyn</span> Martinez</h1>     
+
+             </div> 
+        </div>
+    </div>
+<!--------------About--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/picme2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I am second-year at the University of California at San Diego. I am pursuing a B.S. in Cognitive Science with a specilization in Machine Learning and Neural Computation and a minor in Computer Science. I aim to become more involved with the design and software programming field. In my downtime, I enjoy reading, crocheting, playing games online, or working out. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Interests</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces </li>
+                            <li><span>Web development</span><br>Web App Development </li>
+                            <li><span>App development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>September 2022 - Current</span><br>Export Control Assistant at UCSD</li>
+                            <li><span>June - August 2022</span><br>Resource Assistant at OASIS (UCSD)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - Present</span><br>B.S. in Cogntitive Science (Spec. Machine Learning), minor in Computer Science at UCSD</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------skills------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design </h2>
+                <p>Familiar with front-end web development languages including HTML, CSS, and basic knowledge in JavaScript.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>  
+                <h2>UI/UX design</h2>            
+                <p>Efficient at using design software such as Figma, Adobe Illustrator and Canva. </p>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-code-compare"></i>             
+                <h2>Software Development</h2>
+                <p>Foundational understanding of Python and Java programming languages. </p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</div>
+
+<!---------portfolio----------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" >
+                <div class="layer">
+                    <h3>Study Buddy Website &nbsp;&nbsp;<a href="file:///C:/Users/jeral/OneDrive/COGS%203/studyBuddyFiles-LAB%20starter/MartinezLab3.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
+                    <p>Created a website for a Studdy Buddy app using Bootsrap 4, HTML and CSS. </p>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" >
+                <div class="layer">
+                    <h3>HTML Tables &nbsp;&nbsp;<a href="file:///C:/Users/jeral/OneDrive/COGS%203/MartinezLab2.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
+                    <p>Created a table with HTML and CSS to represent my fall quarter schedule. </p>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-4.png" >
+                <div class="layer">
+                    <h3>Health App Design &nbsp;&nbsp;<a href="https://www.figma.com/file/nAT8oRxFCT0NJoSOESHnaz/Untitled?node-id=0%3A1&t=WljtSFiJCIYEIiJF-3"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
+                    <p>Created a prototype for a health tracking app using Figma.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------contact--------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="contact-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>jeralynmartinez03@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>(619) 431-2635</p>
+                <br>
+                <a href="https://www.linkedin.com/in/jeralyn-martinez-194928259/"><i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;LinkedIn</a>
+                <br><br>
+                <a href="JeralynMartinez - Resume .pdf" download class="btn btn2">Download Resume </a>
+            </div>
+            
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <br>
+                <br>
+                <br>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName
+        ("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzWP2_b2Z1zssdsf_EudkgTkwWYNP3nYMaqzie7JMCTewfcNDTLW_qaRaR_o9lnT2k/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
